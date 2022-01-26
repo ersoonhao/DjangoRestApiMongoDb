@@ -1,0 +1,19 @@
+{
+  "name": "djangorestapimongodb",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "apps.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersoonhao/DjangoRestApiMongoDb.git"
+  },
+  "author": "ersoonhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ersoonhao/DjangoRestApiMongoDb/issues"
+  },
+  "homepage": "https://github.com/ersoonhao/DjangoRestApiMongoDb#readme"
+}
