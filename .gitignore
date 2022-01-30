@@ -20,3 +20,36 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# build artifacts
+*.swp
+*.pyc
+.DS_Store
+/.coverage
+/dist/
+/build/
+/MANIFEST
+/wagtail.egg-info/
+/docs/_build/
+/.tox/
+/venv
+npm-debug.log*
+*.idea/
+/*.egg/
+/.cache/
+/.pytest_cache/
+
+#vscode
+.vscode
+
+
+#vue3 app files
+
+/vue-3crud/.gitignore
+/vue-3crud/.gitattributes
+/vue-3crud/.eslintrc.js
+/vue-3crud/.prettierrc
+/vue-3crud/.prettierignore
+/vue-3crud/.stylelintrc
+/vue-3crud/.stylelintignore
+/vue-3crud/.eslintignore
