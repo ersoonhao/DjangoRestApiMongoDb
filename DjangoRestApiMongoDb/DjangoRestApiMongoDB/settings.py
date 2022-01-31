@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -93,12 +95,59 @@ WSGI_APPLICATION = 'DjangoRestApiMongoDB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'bezkoder_db',
+        'NAME': 'soonhao_db',
         'HOST': '127.0.0.1',
         'PORT': 27017,
         'USER': 'root'
     }
 }
+
+
+#this throws error:
+# still not fixed. Should not have used Djongo. 
+#https://stackoverflow.com/questions/62193082/djongo-unable-to-connect-to-remote-db-on-cloud-mongodb-com
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'soonhao_db',
+#         'ENFORCE_SCHEMA': True,
+#         'CLIENT': {
+#            'host': 'mongodb://<USERNAME>:<YOUR OWN PASSWORD>@docdb-2022-01-31-10-20-59.cluster-czmzwyti4icp.ap-southeast-1.docdb.amazonaws.com:27017/?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false',
+#            'port': 27017,
+#            'username': '<>',
+#            'authSource':'soonhao_db',
+#            'authMechanism': 'SCRAM-SHA-1'
+#         }
+#     }
+# }
+
+
+#  DATABASES = {
+#         'default': {
+#             'ENGINE': 'djongo',
+#             'NAME': 'soonhao_db',
+#             'ENFORCE_SCHEMA': False,
+#             'CLIENT': {
+#                 'host': 'host-name or ip address',
+#                 'port': port_number,
+#                 'username': 'db-username',
+#                 'password': 'password',
+#                 'authSource': 'db-name',
+#                 'authMechanism': 'SCRAM-SHA-1'
+#             },
+#             'LOGGING': {
+#                 'version': 1,
+#                 'loggers': {
+#                     'djongo': {
+#                         'level': 'DEBUG',
+#                         'propagate': False,                        
+#                     }
+#                 },
+#              },
+#         }
+#     }
+
+
 
 
 # Password validation
