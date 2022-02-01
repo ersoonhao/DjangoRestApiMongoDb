@@ -1,6 +1,6 @@
 note to self:
 
-Self learning for vue3, Django & AWS deployment for non-relational database MongoDB
+Self learning for vue3, Django & AWS deployment for non-relational database MongoDB with aws documentDB 
 
 ---commands to note---
 
