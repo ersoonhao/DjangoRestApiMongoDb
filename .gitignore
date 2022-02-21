@@ -53,3 +53,5 @@ npm-debug.log*
 /vue-3crud/.stylelintrc
 /vue-3crud/.stylelintignore
 /vue-3crud/.eslintignore
+DjangoRestApiMongoDb/DjangoRestApiMongoDB/settings.py
+DjangoRestApiMongoDb/DjangoRestApiMongoDB/__pycache__/settings.cpython-39.pyc
